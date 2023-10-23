@@ -27,8 +27,9 @@ def test_practice_form_information_displayed():
     date_of_birth2.click()
     hobbies = browser.find_element(By.ID, 'hobbies-checkbox-1')
     browser.execute_script("arguments[0].checked = true;", hobbies)
-    submit = browser.find_element(By.ID, 'submit')
-    submit.click()
+    submit_button = browser.find_element(By.ID, 'submit')
+    browser.execute_script("document.getElementById('submit').style.marginTop = '-600px';")
+    submit_button.click()
     submitting_form = browser.find_element(By.CLASS_NAME, 'modal-content')
     assert submitting_form.is_displayed()
 
