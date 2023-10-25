@@ -33,5 +33,17 @@ def test_practice_form_information_displayed():
     submitting_form = browser.find_element(By.CLASS_NAME, 'modal-content')
     assert submitting_form.is_displayed()
 
+def test_that_form_has_red_columns():
+    browser = webdriver.Chrome()
+    browser.implicitly_wait(5)
+    browser.get('https://demoqa.com/automation-practice-form')
+    submit_button = browser.find_element(By.ID, 'submit')
+    browser.execute_script("document.getElementById('submit').style.marginTop = '-600px';")
+    submit_button.click()
+    first_name = browser.find_element(By.ID, 'firstName')
+    first_name_value = first_name.get_attribute("style")
+    assert first_name_value.borderColor == '#dc3545'
+
+
 
 

@@ -5,13 +5,16 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f04aa54d-a94e-4603-bef5-cfb2f21dd8ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/tests/test_add_book_into_your_profile.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/tests/test_check_search_books.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_button_is_clickable.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_delete_book_from_profile.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_log_out.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_model_dialogs_are_displayed.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/test_return_to_book_store.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/Check_That_Create_New_User_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_That_Create_New_User_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/change_users_information_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/change_users_information_test.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/check_That_Create_New_User_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/check_That_Create_New_User_test.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/tests/practice_form_information_displayed_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/practice_form_information_displayed_test.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_new_user_without_data.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_new_user_without_data.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_add_book_into_your_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_add_book_into_your_profile.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_check_search_books.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_check_search_books.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -52,34 +55,6 @@
     </key>
   </component>
   <component name="RunManager" selected="Python tests.Python tests for test_add_book_into_your_profile.test_add_book_into_your_profile">
-    <configuration name="Python tests for change_users_information_test.test_change_users_information" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="TestingDemoqa.com" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;change_users_information_test.test_change_users_information&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for practice_form_information_displayed_test.test_practice_form_information_displayed" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="TestingDemoqa.com" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;practice_form_information_displayed_test.test_practice_form_information_displayed&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
     <configuration name="Python tests for test_add_book_into_your_profile.test_add_book_into_your_profile" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="TestingDemoqa.com" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -94,7 +69,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_check_search_books.test_check_search_books" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_button_is_clickable.test_buttons_is_clickable" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="TestingDemoqa.com" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -104,11 +79,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_check_search_books.test_check_search_books&quot;" />
+      <option name="_new_target" value="&quot;test_button_is_clickable.test_buttons_is_clickable&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for tests.check_That_Create_New_User_test.test_check_that_create_new_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_log_out.test_log_out" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="TestingDemoqa.com" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -118,17 +93,45 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;tests.check_That_Create_New_User_test.test_check_that_create_new_user&quot;" />
+      <option name="_new_target" value="&quot;test_log_out.test_log_out&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_model_dialogs_are_displayed.test_model_dialogs_are_displayed" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="TestingDemoqa.com" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_model_dialogs_are_displayed.test_model_dialogs_are_displayed&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for test_return_to_book_store.test_go_to_book_store" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="TestingDemoqa.com" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;test_return_to_book_store.test_go_to_book_store&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
         <item itemvalue="Python tests.Python tests for test_add_book_into_your_profile.test_add_book_into_your_profile" />
-        <item itemvalue="Python tests.Python tests for practice_form_information_displayed_test.test_practice_form_information_displayed" />
-        <item itemvalue="Python tests.Python tests for change_users_information_test.test_change_users_information" />
-        <item itemvalue="Python tests.Python tests for tests.check_That_Create_New_User_test.test_check_that_create_new_user" />
-        <item itemvalue="Python tests.Python tests for test_check_search_books.test_check_search_books" />
+        <item itemvalue="Python tests.Python tests for test_model_dialogs_are_displayed.test_model_dialogs_are_displayed" />
+        <item itemvalue="Python tests.Python tests for test_button_is_clickable.test_buttons_is_clickable" />
+        <item itemvalue="Python tests.Python tests for test_log_out.test_log_out" />
+        <item itemvalue="Python tests.Python tests for test_return_to_book_store.test_go_to_book_store" />
       </list>
     </recent_temporary>
   </component>
@@ -152,19 +155,29 @@
           <option name="timeStamp" value="16" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/check_That_Create_New_User_test.py</url>
-          <line>23</line>
-          <option name="timeStamp" value="18" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/change_users_information_test.py</url>
           <line>22</line>
           <option name="timeStamp" value="21" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
           <url>file://$PROJECT_DIR$/tests/test_add_book_into_your_profile.py</url>
-          <line>30</line>
-          <option name="timeStamp" value="34" />
+          <line>36</line>
+          <option name="timeStamp" value="40" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_return_to_book_store.py</url>
+          <line>17</line>
+          <option name="timeStamp" value="47" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_button_is_clickable.py</url>
+          <line>21</line>
+          <option name="timeStamp" value="51" />
+        </line-breakpoint>
+        <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
+          <url>file://$PROJECT_DIR$/tests/test_model_dialogs_are_displayed.py</url>
+          <line>10</line>
+          <option name="timeStamp" value="53" />
         </line-breakpoint>
       </breakpoints>
     </breakpoint-manager>

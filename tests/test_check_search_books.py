@@ -11,3 +11,7 @@ def test_check_search_books():
     search_field.send_keys(book_name)
     book = browser.find_element(By.ID, 'see-book-Git Pocket Guide')
     assert book.text == book_name
+    search_field = browser.find_element(By.ID, 'searchBox')
+    new_search = 'Lud'
+    search_field.send_keys(new_search)
+    assert book != True
