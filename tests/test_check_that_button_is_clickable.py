@@ -15,8 +15,5 @@ def test_check_that_button_is_clickable():
     impressive_button = browser.find_element(By.CSS_SELECTOR, 'label[for= "impressiveRadio"]')
     impressive_button.click()
     assert answer.is_displayed()
-   # no_button = browser.find_element(By.CLASS_NAME, 'custom-control-label disabled')
-    #no_button.click()
-    #assert not no_button.click()
 
 

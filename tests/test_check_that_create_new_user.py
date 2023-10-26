@@ -1,6 +1,4 @@
-import pytest
 from selenium.webdriver.common.by import By
-#from conftest import browser
 from selenium import webdriver
 
 
@@ -32,12 +30,3 @@ def test_check_that_create_new_user():
     assert outputCurrentAddress.text == f'Current Address :{current_address_name}'
     outputPermanentAddress = browser.find_element(By.CSS_SELECTOR, '#output #permanentAddress')
     assert outputPermanentAddress.text == f'Permananet Address :{permanent_address_name}'
-
-
-    # TODO: check each property
-    #finish_text = ('Name:user \n'
-     #              'Email:name@example.com \n'
-      #             'Current Address:current address \n '
-       #            'Permananet Address:your address ')
-    #assert result.is_displayed()
-

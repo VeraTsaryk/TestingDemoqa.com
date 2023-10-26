@@ -2,13 +2,13 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 
 
-def test_book_store_application_login_invalid_user ():
+def test_book_store_application_login_invalid_user():
     browser = webdriver.Chrome()
     browser.implicitly_wait(5)
     browser.get('https://demoqa.com/login')
     user_name = browser.find_element(By.ID, 'userName')
     user_name.send_keys('name@form.com')
-    password  = browser.find_element(By.ID, 'password')
+    password = browser.find_element(By.ID, 'password')
     password.send_keys('658kod')
     new_user_button = browser.find_element(By.ID, 'login')
     new_user_button.click()
@@ -31,5 +31,4 @@ def test_book_store_application_login_ok():
     browser.get('https://demoqa.com/profile')
     profile = browser.find_element(By.CLASS_NAME, 'main-header')
     assert profile.text == 'Profile'
-    #profile_name = browser.find_element(By.ID, 'userName-value')
-   # assert profile_name.text == 'Ola'
+

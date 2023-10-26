@@ -20,5 +20,5 @@ def test_change_users_information():
     submit_button = browser.find_element(By.ID, 'submit')
     submit_button.click()
 
-    change_field_age =browser.find_element(By.CSS_SELECTOR, '.rt-tbody > div:nth-child(1) .rt-td:nth-child(3)')
-    assert change_field_age.text == '59' # How to do correct assert?
+    change_field_age = browser.find_element(By.CSS_SELECTOR, '.rt-tbody > div:nth-child(1) .rt-td:nth-child(3)')
+    assert change_field_age.text == '59'

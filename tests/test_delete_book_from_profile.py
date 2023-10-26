@@ -45,7 +45,6 @@ def test_delete_book_in_profile_new_version():
     login_button.click()
     add_to_collection_button = browser.find_element(By.CSS_SELECTOR, 'div[class = "text-right fullButton"] #addNewRecordButton')
     add_to_collection_button.click()
-    # How do alert ?
     WebDriverWait(browser, 10).until(EC.alert_is_present())
     browser.switch_to.alert.accept()
     user_profile = browser.find_element(By.CSS_SELECTOR, '.accordion :nth-child(6)>div>ul>li:nth-child(3)')
