@@ -10,6 +10,12 @@ def test_model_dialogs_are_displayed():
     modal_body = browser.find_element(By.CLASS_NAME, 'modal-title')
     assert modal_body.is_displayed()
     assert modal_body.text == 'Small Modal'
+
+
+def test_large_model_dialog_is_displayed():
+    browser = webdriver.Chrome()
+    browser.implicitly_wait(5)
+    browser.get('https://demoqa.com/modal-dialogs')
     browser.find_element(By.ID, 'closeSmallModal').click()
     browser.find_element(By.ID, 'showLargeModal').click()
     modal_title = browser.find_element(By.CLASS_NAME, 'modal-title')

@@ -2,12 +2,10 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 
 
-def test_practice_form_information_displayed():
+def test_practice_form_information_is_displayed():
     browser = webdriver.Chrome()
     browser.implicitly_wait(5)
-    browser.get('https://demoqa.com/forms')
-    practice_form_button = (browser.find_element(By.CSS_SELECTOR, 'div[class ="element-list collapse show"] #item-0'))
-    practice_form_button.click()
+    browser.get('https://demoqa.com/automation-practice-form')
     first_name = browser.find_element(By.ID, 'firstName')
     firstName = 'Igor'
     first_name.send_keys(firstName)

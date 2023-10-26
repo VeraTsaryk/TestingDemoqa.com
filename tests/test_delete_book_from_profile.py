@@ -4,29 +4,7 @@ from selenium.webdriver.support.ui import WebDriverWait
 from selenium.webdriver.support import expected_conditions as EC
 
 
-def test_delete_book_in_profile():
-    browser = webdriver.Chrome()
-    browser.implicitly_wait(5)
-    browser.get('https://demoqa.com/profile')
-    browser.find_element(By.CSS_SELECTOR, '#notLoggin-label > a:nth-child(1)').click()
-    user_name = browser.find_element(By.ID, 'userName')
-    login = "Ola"
-    user_name.send_keys(login)
-    password = browser.find_element(By.ID, 'password')
-    passwordName = '12345@Ola'
-    password.send_keys(passwordName)
-    login_button = browser.find_element(By.ID, 'login')
-    login_button.click()
-    book = browser.find_element(By.ID, 'see-book-Git Pocket Guide')
-    delete_button = browser.find_element(By.ID, 'delete-record-undefined')
-    delete_button.click()
-    browser.find_element(By.ID, 'closeSmallModal-ok').click()
-    WebDriverWait(browser, 10).until(EC.alert_is_present())
-    browser.switch_to.alert.accept()
-    assert book != True
-
-
-def test_delete_book_in_profile_new_version():
+def test_delete_book_from_profile():
     browser = webdriver.Chrome()
     browser.implicitly_wait(5)
     browser.maximize_window()

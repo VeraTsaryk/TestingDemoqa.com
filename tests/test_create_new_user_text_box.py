@@ -2,12 +2,10 @@ from selenium.webdriver.common.by import By
 from selenium import webdriver
 
 
-def test_check_that_create_new_user():
+def test_create_new_user_text_box():
     browser = webdriver.Chrome()
     browser.implicitly_wait(5)
-    browser.get('https://demoqa.com/elements')
-    text_box = browser.find_element(By.CLASS_NAME, 'text')
-    text_box.click()
+    browser.get('https://demoqa.com/text-box')
     full_name = browser.find_element(By.ID, 'userName')
     username = 'Jon Doe'
     full_name.send_keys(username)
