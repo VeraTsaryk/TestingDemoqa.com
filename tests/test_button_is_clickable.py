@@ -3,7 +3,7 @@ from selenium import webdriver
 from selenium.webdriver import ActionChains
 
 
-def test_buttons_is_clickable():
+def test_button_is_double_clickable():
     browser = webdriver.Chrome()
     browser.implicitly_wait(5)
     browser.maximize_window()
@@ -13,11 +13,26 @@ def test_buttons_is_clickable():
     action.double_click(button_double_click).perform()
     text_about_double_click = browser.find_element(By.ID, 'doubleClickMessage')
     assert text_about_double_click.is_displayed()
+
+
+def test_button_is_right_clickable():
+    browser = webdriver.Chrome()
+    browser.implicitly_wait(5)
+    browser.maximize_window()
+    browser.get('https://demoqa.com/buttons')
+    action = ActionChains(browser)
     button_right_click = browser.find_element(By.ID, 'rightClickBtn')
     action.context_click(button_right_click).perform()
     text_right_click = browser.find_element(By.ID, 'rightClickMessage')
     assert text_right_click.is_displayed()
-    button_dynamic_click = browser.find_element(By.CSS_SELECTOR, 'div.col-12.mt-4.col-md-6 > div:nth-child(2) > div:nth-child(3)>button')
+
+
+ def test_button_is_clickable():
+    browser = webdriver.Chrome()
+    browser.implicitly_wait(5)
+    browser.maximize_window()
+    browser.get('https://demoqa.com/buttons')
+    button_dynamic_click = browser.find_element(By.CSS_SELECTOR,'div.col-12.mt-4.col-md-6 > div:nth-child(2) > div:nth-child(3)>button')
     button_dynamic_click.click()
     text_dynamic_click = browser.find_element(By.ID, 'dynamicClickMessage')
     assert text_dynamic_click.is_displayed()
