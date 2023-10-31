@@ -5,17 +5,15 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f04aa54d-a94e-4603-bef5-cfb2f21dd8ac" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/PageObject/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PageObject/base_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/PageObject/login_page.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/tests/base_test.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/__init__.py" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/utilities/test_data.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/book_store_application_login_test.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_book_store_application_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_add_book_into_your_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_add_book_into_your_profile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_button_is_clickable.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_button_is_clickable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_change_users_information.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_edit_user_age.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_check_status_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_check_status_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_check_that_button_is_clickable.py" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_check_that_create_new_user.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_create_new_user_text_box.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_delete_book_from_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_delete_book_from_profile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_model_dialogs_are_displayed.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_model_dialogs_are_displayed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_practice_form_information_displayed.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_practice_form_information_is_displayed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/conftest.py" beforeDir="false" afterPath="$PROJECT_DIR$/conftest.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_book_store_application_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_book_store_application_login.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -47,15 +45,20 @@
   "keyToString": {
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
-    "git-widget-placeholder": "PageObject"
+    "git-widget-placeholder": "PageObject",
+    "last_opened_file_path": "D:/Projects/python/TestingDemoqa.com"
   }
 }]]></component>
   <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="D:\Projects\python\TestingDemoqa.com" />
+      <recent name="D:\Projects\python\TestingDemoqa.com\PageObject" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="D:\Projects\python\TestingDemoqa.com\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_add_book_into_your_profile.test_add_book_into_your_profile">
+  <component name="RunManager" selected="Python tests.Python tests for test_book_store_application_login.TestLogin.test_book_store_application_login_invalid_user">
     <configuration name="Python tests for test_add_book_into_your_profile.test_add_book_into_your_profile" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="TestingDemoqa.com" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -70,7 +73,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_check_status_code.test_check_that_create_new_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_book_store_application_login.TestLogin.test_book_store_application_login_invalid_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="TestingDemoqa.com" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -80,11 +83,11 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_check_status_code.test_check_that_create_new_user&quot;" />
+      <option name="_new_target" value="&quot;test_book_store_application_login.TestLogin.test_book_store_application_login_invalid_user&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_check_that_button_is_clickable.test_check_that_button_impressive_is_clickable" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for test_book_store_application_login.test_book_store_application_login_invalid_user" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="TestingDemoqa.com" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -94,7 +97,7 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_check_that_button_is_clickable.test_check_that_button_impressive_is_clickable&quot;" />
+      <option name="_new_target" value="&quot;test_book_store_application_login.test_book_store_application_login_invalid_user&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -142,11 +145,11 @@
     </configuration>
     <recent_temporary>
       <list>
+        <item itemvalue="Python tests.Python tests for test_book_store_application_login.TestLogin.test_book_store_application_login_invalid_user" />
+        <item itemvalue="Python tests.Python tests for test_book_store_application_login.test_book_store_application_login_invalid_user" />
         <item itemvalue="Python tests.Python tests for test_add_book_into_your_profile.test_add_book_into_your_profile" />
         <item itemvalue="Python tests.Python tests for tests.test_model_dialogs_are_displayed" />
         <item itemvalue="Python tests.Python tests for tests.test_model_dialogs_are_displayed" />
-        <item itemvalue="Python tests.Python tests for test_check_that_button_is_clickable.test_check_that_button_impressive_is_clickable" />
-        <item itemvalue="Python tests.Python tests for test_check_that_button_is_clickable.test_check_that_button_is_clickable" />
       </list>
     </recent_temporary>
   </component>
