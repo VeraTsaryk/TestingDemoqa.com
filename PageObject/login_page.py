@@ -2,7 +2,6 @@ from selenium.webdriver.common.by import By
 from PageObject.base_page import BasePage
 
 
-
 class LoginPage(BasePage):
     email_address_field = (By.ID, "userName")
     password_field = (By.ID, "password")
