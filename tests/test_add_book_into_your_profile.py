@@ -22,15 +22,15 @@ def test_add_book_into_your_profile():
     password.send_keys(passwordName)
     login_button = browser.find_element(By.ID, 'login')
     login_button.click()
-    add_to_collection_button = browser.find_element(By.CSS_SELECTOR, 'div[class = "text-right fullButton"] #addNewRecordButton')
+    add_to_collection_button = browser.find_element(By.CSS_SELECTOR,
+                                                    'div[class = "text-right fullButton"] #addNewRecordButton')
     add_to_collection_button.click()
     WebDriverWait(browser, 10).until(EC.alert_is_present())
     browser.switch_to.alert.accept()
     user_profile = browser.find_element(By.CSS_SELECTOR, '.accordion :nth-child(6) > div > ul> li:nth-child(3)')
-    action = ActionChains(browser)
-    action.move_to_element(user_profile)
-    action.perform()
-    WebDriverWait(browser, 10).until(EC.element_to_be_clickable((By.CSS_SELECTOR,'.accordion :nth-child(6) > div > ul> li:nth-child(3)' )))
+    # WebDriverWait(browser, 10).until(
+    #     EC.element_to_be_clickable((By.CSS_SELECTOR, '.accordion :nth-child(6) > div > ul> li:nth-child(3)')))
+    
     user_profile.click()
     book = browser.find_element(By.ID, 'see-book-Git Pocket Guide')
     assert book.is_displayed()
@@ -68,7 +68,8 @@ def test_delete_book_from_profile():
     password.send_keys(passwordName)
     login_button = browser.find_element(By.ID, 'login')
     login_button.click()
-    add_to_collection_button = browser.find_element(By.CSS_SELECTOR, 'div[class = "text-right fullButton"] #addNewRecordButton')
+    add_to_collection_button = browser.find_element(By.CSS_SELECTOR,
+                                                    'div[class = "text-right fullButton"] #addNewRecordButton')
     add_to_collection_button.click()
     WebDriverWait(browser, 10).until(EC.alert_is_present())
     browser.switch_to.alert.accept()
@@ -84,3 +85,23 @@ def test_delete_book_from_profile():
     browser.switch_to.alert.accept()
     assert book != True
 
+
+def test_go_to_book_store():
+    browser = webdriver.Chrome()
+    browser.implicitly_wait(5)
+    browser.maximize_window()
+    browser.get('https://demoqa.com/profile')
+    browser.find_element(By.CSS_SELECTOR, '#notLoggin-label > a:nth-child(1)').click()
+    user_name = browser.find_element(By.ID, 'userName')
+    login = "Ola"
+    user_name.send_keys(login)
+    password = browser.find_element(By.ID, 'password')
+    passwordName = '12345@Ola'
+    password.send_keys(passwordName)
+    login_button = browser.find_element(By.ID, 'login')
+    login_button.click()
+    button_go_to_store = browser.find_element(By.ID, 'gotoStore')
+    button_go_to_store.click()
+    book_store = browser.find_element(By.CLASS_NAME, 'main-header')
+    assert book_store.is_displayed()
+    assert book_store.text == 'Book Store'

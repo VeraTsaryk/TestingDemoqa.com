@@ -1,22 +1,17 @@
 from selenium.webdriver.common.by import By
-from selenium import webdriver
+from PageObject.age_page import AgePage
+from tests.base_test import BaseTest
+from utilities.test_data import TestData
 
 
-def test_edit_user_age():
-    browser = webdriver.Chrome()
-    browser.implicitly_wait(5)
-    browser.get('https://demoqa.com/webtables')
-
-    edit_field_age = browser.find_element(By.CSS_SELECTOR, '.rt-tbody > div:nth-child(1) .rt-td:nth-child(3)')
-    assert edit_field_age.text == '39'
-
-    rename_button = browser.find_element(By.ID, 'edit-record-1')
-    rename_button.click()
-    field_age = browser.find_element(By.ID, 'age')
-    field_age.clear()
-    field_age.send_keys(59)
-    submit_button = browser.find_element(By.ID, 'submit')
-    submit_button.click()
-
-    edit_field_age = browser.find_element(By.CSS_SELECTOR, '.rt-tbody > div:nth-child(1) .rt-td:nth-child(3)')
-    assert edit_field_age.text == '59'
+class TestEditAge(BaseTest):
+    def test_edit_user_age(self):
+        age_page = AgePage(self.driver)
+        age_page.open_page(TestData.web_tables_url)
+        edit_field_age = age_page.find(By.CSS_SELECTOR, '.rt-tbody > div:nth-child(1) .rt-td:nth-child(3)')
+        assert edit_field_age.text == '39'
+        age_page.click_rename_button()
+        age_page.set_age_field('59')
+        age_page.click_submit_button()
+        edit_field_age = age_page.find(By.CSS_SELECTOR, '.rt-tbody > div:nth-child(1) .rt-td:nth-child(3)')
+        assert edit_field_age.text == '59'

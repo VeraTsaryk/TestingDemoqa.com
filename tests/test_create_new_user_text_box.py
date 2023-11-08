@@ -1,30 +1,25 @@
 from selenium.webdriver.common.by import By
 from selenium import webdriver
 
+from PageObject.text_box_page import TextBoxPage
+from tests.base_test import BaseTest
+from utilities.test_data import TestData
 
-def test_create_new_user_text_box():
-    browser = webdriver.Chrome()
-    browser.implicitly_wait(5)
-    browser.get('https://demoqa.com/text-box')
-    full_name = browser.find_element(By.ID, 'userName')
-    username = 'Jon Doe'
-    full_name.send_keys(username)
-    email = browser.find_element(By.ID, 'userEmail')
-    emailName = 'name@example.com'
-    email.send_keys(emailName)
-    current_address = browser.find_element(By.ID, 'currentAddress')
-    current_address_name = 'current address'
-    current_address.send_keys(current_address_name)
-    permanent_address = browser.find_element(By.ID, 'permanentAddress')
-    permanent_address_name = 'your address'
-    permanent_address.send_keys(permanent_address_name)
-    button_submit = browser.find_element(By.ID, 'submit')
-    button_submit.click()
-    outputName = browser.find_element(By.CSS_SELECTOR, '#output #name')
-    assert outputName.text == f'Name:{username}'
-    outputEmail= browser.find_element(By.CSS_SELECTOR, '#output #email')
-    assert outputEmail.text == f'Email:{emailName}'
-    outputCurrentAddress = browser.find_element(By.CSS_SELECTOR, '#output #currentAddress')
-    assert outputCurrentAddress.text == f'Current Address :{current_address_name}'
-    outputPermanentAddress = browser.find_element(By.CSS_SELECTOR, '#output #permanentAddress')
-    assert outputPermanentAddress.text == f'Permananet Address :{permanent_address_name}'
+
+class TestCreateUserTextBox(BaseTest):
+    def test_create_new_user_text_box(self):
+        text_box_page = TextBoxPage(self.driver)
+        text_box_page.open_page(TestData.test_box_url)
+        text_box_page.set_full_name('Jon Doe')
+        text_box_page.set_email_name('name@example.com')
+        text_box_page.set_current_address('current address')
+        text_box_page.set_permanent_address('your address')
+        text_box_page.click_submit_button()
+        outputName = text_box_page.find(By.CSS_SELECTOR, '#output #name')
+        assert outputName.text == 'Name:Jon Doe'
+        outputEmail= text_box_page.find(By.CSS_SELECTOR, '#output #email')
+        assert outputEmail.text == 'Email:name@example.com'
+        outputCurrentAddress = text_box_page.find(By.CSS_SELECTOR, '#output #currentAddress')
+        assert outputCurrentAddress.text == 'Current Address :current address'
+        outputPermanentAddress = text_box_page.find(By.CSS_SELECTOR, '#output #permanentAddress')
+        assert outputPermanentAddress.text == 'Permananet Address :your address'

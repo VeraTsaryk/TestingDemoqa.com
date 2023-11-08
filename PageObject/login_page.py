@@ -8,6 +8,8 @@ class LoginPage(BasePage):
     login_button = (By.ID, 'login')
     warning_message = (By.CLASS_NAME, 'mb-1')
     log_out_button = (By.CSS_SELECTOR, 'div[class = "text-right col-md-5 col-sm-12"] #submit')
+    login_name = (By.ID, 'userName-value')
+    user_form = (By.CSS_SELECTOR, '#userForm > div:nth-child(1)')
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -34,3 +36,12 @@ class LoginPage(BasePage):
 
     def open_page(self, url):
         return self.driver.get(url)
+
+    def click_login_out_button(self):
+        self.click(self.log_out_button)
+
+    def profile_name(self):
+        return self.find(self.login_name)
+
+    def actuall_form(self):
+        return self.find(self.user_form)
