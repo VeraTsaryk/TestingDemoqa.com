@@ -18,15 +18,16 @@ class TestBookApplication(BaseTest):
         book_page.click_add_to_collection_button()
         WebDriverWait(self.driver, 10).until(EC.alert_is_present())
         self.driver.switch_to.alert.accept()
-        # Problem with click
         book_page.click_user_profile()
         book = book_page.find(By.ID, 'see-book-Git Pocket Guide')
+        # to do Find and display function doesn't work
         assert book.is_displayed()
 
     def test_check_search_books(self):
         book_page = BookPage(self.driver)
         book_page.open_page(TestData.book_url)
         book_page.set_search_field('Git Pocket Guide')
+        # to do Find function doesn't work in PageObject
         book = book_page.find(By.ID, 'see-book-Git Pocket Guide')
         assert book.text == 'Git Pocket Guide'
         book_page.set_search_field('Lud')
@@ -37,8 +38,10 @@ class TestBookApplication(BaseTest):
         book_page.open_page(TestData.profile_url)
         book_page.click_login_button_in_profile()
         book_page.log_into_application('Ola', '12345@Ola')
-        # Problem with advertising?
+        self.driver.execute_script("window.scrollTo(0, 0)")
+        self.driver.implicitly_wait(5)
         book_page.click_button_go_to_store()
+        # to do Find and display function doesn't work
         book_store = book_page.find(By.CLASS_NAME, 'main-header')
         assert book_store.is_displayed()
         assert book_store.text == 'Book Store'
@@ -53,8 +56,8 @@ class TestBookApplication(BaseTest):
         book_page.click_add_to_collection_button()
         WebDriverWait(self.driver, 10).until(EC.alert_is_present())
         self.driver.switch_to.alert.accept()
-        # Problem with click
         book_page.click_user_profile()
+        # to do Find and display function doesn't work
         book = book_page.find(By.ID, 'see-book-Git Pocket Guide')
         assert book.is_displayed()
         book_page.click_delete_button()

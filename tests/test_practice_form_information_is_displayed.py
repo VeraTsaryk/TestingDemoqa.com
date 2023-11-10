@@ -1,6 +1,4 @@
 from selenium.webdriver.common.by import By
-from selenium import webdriver
-
 from PageObject.practice_page import PracticePage
 from tests.base_test import BaseTest
 from utilities.test_data import TestData
@@ -18,10 +16,9 @@ class TestPracticeForm(BaseTest):
         hobbies_field = practice_page.find(By.ID, 'hobbies-checkbox-1')
         self.driver.execute_script("arguments[0].checked = true;", hobbies_field)
         practice_page.click_submit_button()
-        submitting_form = practice_page.find(By.CLASS_NAME, 'modal-content')
-        assert submitting_form.is_displayed()
-
-
+        # to do Find and display function doesn't work
+        #submitting_form = practice_page.find(By.CLASS_NAME, 'modal-content')
+        assert practice_page.form_is_displayed()
 
     # def test_practice_form_information_is_displayed():
     # browser = webdriver.Chrome()
@@ -62,7 +59,3 @@ class TestPracticeForm(BaseTest):
     # first_name = browser.find_element(By.ID, 'firstName')
     # first_name_value = first_name.get_attribute("style")
     # assert first_name_value.borderColor == '#dc3545'
-
-
-
-

@@ -15,11 +15,11 @@ class TestCreateUserTextBox(BaseTest):
         text_box_page.set_current_address('current address')
         text_box_page.set_permanent_address('your address')
         text_box_page.click_submit_button()
-        outputName = text_box_page.find(By.CSS_SELECTOR, '#output #name')
-        assert outputName.text == 'Name:Jon Doe'
-        outputEmail= text_box_page.find(By.CSS_SELECTOR, '#output #email')
-        assert outputEmail.text == 'Email:name@example.com'
-        outputCurrentAddress = text_box_page.find(By.CSS_SELECTOR, '#output #currentAddress')
-        assert outputCurrentAddress.text == 'Current Address :current address'
-        outputPermanentAddress = text_box_page.find(By.CSS_SELECTOR, '#output #permanentAddress')
-        assert outputPermanentAddress.text == 'Permananet Address :your address'
+        #outputName = text_box_page.find(By.CSS_SELECTOR, '#output #name')
+        assert text_box_page.get_text_out_put_name == 'Name:Jon Doe'
+        #outputEmail= text_box_page.find(By.CSS_SELECTOR, '#output #email')
+        assert text_box_page.get_text_out_put_email == 'Email:name@example.com'
+        #outputCurrentAddress = text_box_page.find(By.CSS_SELECTOR, '#output #currentAddress')
+        assert text_box_page.get_text_out_put_current_address == 'Current Address :current address'
+        #outputPermanentAddress = text_box_page.find(By.CSS_SELECTOR, '#output #permanentAddress')
+        assert text_box_page.get_text_out_put_permanent_address == 'Permananet Address :your address'

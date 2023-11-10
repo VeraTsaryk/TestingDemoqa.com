@@ -7,6 +7,7 @@ class AgePage(BasePage):
     rename_button = (By.ID, 'edit-record-1')
     field_age = (By.ID, 'age')
     submit_button = (By.ID, 'submit')
+    edit_field_age = (By.CSS_SELECTOR, '.rt-tbody > div:nth-child(1) .rt-td:nth-child(3)')
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -22,3 +23,7 @@ class AgePage(BasePage):
 
     def open_page(self, url):
         return self.driver.get(url)
+
+    @property
+    def get_text_field_age(self):
+        return self.get_text(self.edit_field_age)

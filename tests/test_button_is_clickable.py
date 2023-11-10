@@ -33,6 +33,7 @@ class TestButtonIsClickable(BaseTest):
         click_page = ClickPage(self.driver)
         click_page.open_page(TestData.radio_buttons_url)
         click_page.click(click_page.yes_button)
+        # to do Find and display function doesn't work
         answer = click_page.find(click_page.answer)
         assert answer.is_displayed()
 
@@ -40,5 +41,7 @@ class TestButtonIsClickable(BaseTest):
         click_page = ClickPage(self.driver)
         click_page.open_page(TestData.radio_buttons_url)
         click_page.click(click_page.impressive_button)
+        # to do Find and display function doesn't work
         answer = click_page.find(click_page.answer)
         assert answer.is_displayed()
+

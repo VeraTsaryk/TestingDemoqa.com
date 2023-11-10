@@ -1,5 +1,4 @@
 from selenium.webdriver.common.by import By
-from PageObject.base_page import BasePage
 from PageObject.login_page import LoginPage
 
 
@@ -30,8 +29,7 @@ class BookPage(LoginPage):
         self.click(self.login_form)
 
     def click_user_profile(self):
-        user_profile_field = self.find(self.user_profile)
-        self.driver.execute_script("arguments[0].scrollIntoView()", user_profile_field)
+        self.driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
         self.click(self.user_profile)
 
     def set_search_field(self,book_name):

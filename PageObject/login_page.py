@@ -10,6 +10,7 @@ class LoginPage(BasePage):
     log_out_button = (By.CSS_SELECTOR, 'div[class = "text-right col-md-5 col-sm-12"] #submit')
     login_name = (By.ID, 'userName-value')
     user_form = (By.CSS_SELECTOR, '#userForm > div:nth-child(1)')
+    actual_name = (By.ID, 'userName-value')
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -43,5 +44,12 @@ class LoginPage(BasePage):
     def profile_name(self):
         return self.find(self.login_name)
 
-    def actuall_form(self):
+    def actual_form(self):
         return self.find(self.user_form)
+
+    def find_actual_name(self):
+        return self.find(self.actual_name)
+
+    @property
+    def get_text_actual_name(self):
+        return self.get_text(self.actual_name)

@@ -12,7 +12,7 @@ class PracticePage(BasePage):
     date_of_birth2 = (By.CSS_SELECTOR, 'div [aria-label = "Choose Tuesday, November 14th, 2023"]')
     hobbies = (By.ID, 'hobbies-checkbox-1')
     submit_button = (By.ID, 'submit')
-    submitting_form = (By.CLASS_NAME, 'modal-content')
+    submitting_form = (By.CSS_SELECTOR, '.modal-content')
 
     def __init__(self, driver):
         super().__init__(driver)
@@ -49,3 +49,8 @@ class PracticePage(BasePage):
         self.set_mobile_number(mobile_number)
         self.click_date_of_birth()
         self.click_date_of_birth2()
+
+    def form_is_displayed(self):
+        locator = self.submitting_form
+        form = self.find(locator)
+        return form.is_displayed()
