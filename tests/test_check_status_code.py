@@ -1,18 +1,15 @@
-import pytest
-from selenium.webdriver.common.by import By
 import requests
-#from conftest import browser
-from selenium import webdriver
+from PageObject.status_page import StatusPage
+from tests.base_test import BaseTest
+from utilities.test_data import TestData
 
 
-def test_check_that_create_new_user():
-    browser = webdriver.Chrome()
-    browser.implicitly_wait(5)
-    browser.get('https://demoqa.com/elements')
-    broken_link_images_button = browser.find_element(By.CSS_SELECTOR, 'div[class ="element-list collapse show"] #item-6')
-    broken_link_images_button.click()
-    second_link_button = browser.find_element(By.CSS_SELECTOR, '#app > div > div > div.row > div.col-12.mt-4.col-md-6 > div:nth-child(2) > a:nth-child(14)')
-    second_link_button.click()
-    browser.implicitly_wait(5)
-    responce = requests.get('https://the-internet.herokuapp.com/status_codes/500')
-    assert responce.status_code == 500
+class TestStatusCode(BaseTest):
+    def test_check_that_status_code_equal_500(self):
+        status_page = StatusPage(self.driver)
+        status_page.open_page(TestData.broken_url)
+        status_page.click_second_link_button()
+        self.driver.implicitly_wait(5)
+        responce = requests.get(TestData.status_code_link)
+        assert responce.status_code == 500
+
