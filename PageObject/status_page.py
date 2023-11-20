@@ -11,5 +11,4 @@ class StatusPage(BasePage):
     def click_second_link_button(self):
         self.click(self.second_link_button)
 
-    def open_page(self, url):
-        return self.driver.get(url)
+
