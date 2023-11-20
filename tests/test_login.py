@@ -1,7 +1,7 @@
-from selenium.webdriver.common.by import By
 from PageObject.login_page import LoginPage
 from tests.base_test import BaseTest
 from utilities.test_data import TestData
+from Locators.login_locators import LoginLocators
 
 
 class TestLogin(BaseTest):
@@ -24,12 +24,9 @@ class TestLogin(BaseTest):
         login_page = LoginPage(self.driver)
         login_page.open_page(TestData.url)
         login_page.log_into_application(TestData.email, TestData.password)
-        self.driver.implicitly_wait(2)
-        actual_name = login_page.find(By.ID, 'userName-value')
-        assert actual_name.is_displayed()
-        assert actual_name.text == 'Ola'
+        assert login_page.actual_name_is_displayed()
+        assert login_page.get_text_actual_name == 'Ola'
         login_page.click_login_out_button()
-        # Problem with find.element
-        user_form = login_page.actual_form()
-        assert actual_name != True
-        assert user_form.is_displayed()
+        actual_name = login_page.find2(LoginLocators.actual_name, 2)
+        assert actual_name is None
+        assert login_page.user_form_is_displayed()
