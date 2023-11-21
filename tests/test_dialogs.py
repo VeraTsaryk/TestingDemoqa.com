@@ -3,7 +3,7 @@ from tests.base_test import BaseTest
 from utilities.test_data import TestData
 
 
-class TestDialogsAreDisplayed(BaseTest):
+class TestDialogs(BaseTest):
 
     def test_model_dialogs_are_displayed(self):
         dialogs_page = DialogsPage(self.driver)

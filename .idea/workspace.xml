@@ -5,31 +5,14 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="f04aa54d-a94e-4603-bef5-cfb2f21dd8ac" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/Locators/age_locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Locators/book_locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Locators/click_locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Locators/dialogs_locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Locators/login_locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Locators/practice_form_locators.py" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/Locators/text_box_locators.py" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/age_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/age_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/base_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/base_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/book_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/book_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/click_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/click_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/dialogs_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/dialogs_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/login_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/login_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/practice_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/practice_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/status_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/status_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObject/text_box_page.py" beforeDir="false" afterPath="$PROJECT_DIR$/PageObject/text_box_page.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_add_book_into_your_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_add_book_into_your_profile.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_button_is_clickable.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_button_is_clickable.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_check_status_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_check_status_code.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_create_new_user_text_box.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_create_new_user_text_box.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_edit_user_age.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_edit_user_age.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_login.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_login.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_model_dialogs_are_displayed.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_model_dialogs_are_displayed.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/tests/test_practice_form_information_is_displayed.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_practice_form_information_is_displayed.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_add_book_into_your_profile.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_books.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_button_is_clickable.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_button.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_check_status_code.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_status_code.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_create_new_user_text_box.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_text_box.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_edit_user_age.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_edit_age.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_model_dialogs_are_displayed.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_dialogs.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/tests/test_practice_form_information_is_displayed.py" beforeDir="false" afterPath="$PROJECT_DIR$/tests/test_practice_form.py" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -61,7 +44,7 @@
   &quot;keyToString&quot;: {
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
-    &quot;git-widget-placeholder&quot;: &quot;PageObject&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
     &quot;last_opened_file_path&quot;: &quot;D:/Projects/python/TestingDemoqa.com&quot;,
     &quot;settings.editor.selected.configurable&quot;: &quot;com.jetbrains.python.configuration.PyActiveSdkModuleConfigurable&quot;
   }
@@ -76,7 +59,7 @@
       <recent name="D:\Projects\python\TestingDemoqa.com\tests" />
     </key>
   </component>
-  <component name="RunManager" selected="Python tests.Python tests for test_model_dialogs_are_displayed.TestDialogsAreDisplayed.test_model_dialogs_are_displayed">
+  <component name="RunManager" selected="Python tests.Python tests for tests.test_books">
     <configuration name="Python tests for test_add_book_into_your_profile.TestBookApplication.test_add_book_into_your_profile" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="TestingDemoqa.com" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -88,34 +71,6 @@
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
       <option name="_new_target" value="&quot;test_add_book_into_your_profile.TestBookApplication.test_add_book_into_your_profile&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_add_book_into_your_profile.TestBookApplication.test_check_search_books" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="TestingDemoqa.com" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_add_book_into_your_profile.TestBookApplication.test_check_search_books&quot;" />
-      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
-      <method v="2" />
-    </configuration>
-    <configuration name="Python tests for test_add_book_into_your_profile.TestBookApplication.test_delete_book_from_profile" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
-      <module name="TestingDemoqa.com" />
-      <option name="INTERPRETER_OPTIONS" value="" />
-      <option name="PARENT_ENVS" value="true" />
-      <option name="SDK_HOME" value="" />
-      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
-      <option name="IS_MODULE_SDK" value="true" />
-      <option name="ADD_CONTENT_ROOTS" value="true" />
-      <option name="ADD_SOURCE_ROOTS" value="true" />
-      <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_add_book_into_your_profile.TestBookApplication.test_delete_book_from_profile&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
@@ -133,7 +88,7 @@
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
-    <configuration name="Python tests for test_model_dialogs_are_displayed.TestDialogsAreDisplayed.test_model_dialogs_are_displayed" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+    <configuration name="Python tests for tests.test_books" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
       <module name="TestingDemoqa.com" />
       <option name="INTERPRETER_OPTIONS" value="" />
       <option name="PARENT_ENVS" value="true" />
@@ -143,17 +98,59 @@
       <option name="ADD_CONTENT_ROOTS" value="true" />
       <option name="ADD_SOURCE_ROOTS" value="true" />
       <option name="_new_additionalArguments" value="&quot;&quot;" />
-      <option name="_new_target" value="&quot;test_model_dialogs_are_displayed.TestDialogsAreDisplayed.test_model_dialogs_are_displayed&quot;" />
+      <option name="_new_target" value="&quot;tests.test_books&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_books" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="TestingDemoqa.com" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_books&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_books" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="TestingDemoqa.com" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_books&quot;" />
+      <option name="_new_targetType" value="&quot;PYTHON&quot;" />
+      <method v="2" />
+    </configuration>
+    <configuration name="Python tests for tests.test_dialogs" type="tests" factoryName="Autodetect" temporary="true" nameIsGenerated="true">
+      <module name="TestingDemoqa.com" />
+      <option name="INTERPRETER_OPTIONS" value="" />
+      <option name="PARENT_ENVS" value="true" />
+      <option name="SDK_HOME" value="" />
+      <option name="WORKING_DIRECTORY" value="$PROJECT_DIR$/tests" />
+      <option name="IS_MODULE_SDK" value="true" />
+      <option name="ADD_CONTENT_ROOTS" value="true" />
+      <option name="ADD_SOURCE_ROOTS" value="true" />
+      <option name="_new_additionalArguments" value="&quot;&quot;" />
+      <option name="_new_target" value="&quot;tests.test_dialogs&quot;" />
       <option name="_new_targetType" value="&quot;PYTHON&quot;" />
       <method v="2" />
     </configuration>
     <recent_temporary>
       <list>
-        <item itemvalue="Python tests.Python tests for test_model_dialogs_are_displayed.TestDialogsAreDisplayed.test_model_dialogs_are_displayed" />
+        <item itemvalue="Python tests.Python tests for tests.test_books" />
+        <item itemvalue="Python tests.Python tests for tests.test_dialogs" />
         <item itemvalue="Python tests.Python tests for test_login.TestLogin.test_log_out" />
-        <item itemvalue="Python tests.Python tests for test_add_book_into_your_profile.TestBookApplication.test_add_book_into_your_profile" />
-        <item itemvalue="Python tests.Python tests for test_add_book_into_your_profile.TestBookApplication.test_check_search_books" />
-        <item itemvalue="Python tests.Python tests for test_add_book_into_your_profile.TestBookApplication.test_delete_book_from_profile" />
+        <item itemvalue="Python tests.Python tests for tests.test_books" />
+        <item itemvalue="Python tests.Python tests for tests.test_books" />
       </list>
     </recent_temporary>
   </component>
@@ -172,17 +169,17 @@
     <breakpoint-manager>
       <breakpoints>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/test_check_status_code.py</url>
+          <url>file://$PROJECT_DIR$/tests/test_status_code.py</url>
           <line>10</line>
           <option name="timeStamp" value="75" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/test_add_book_into_your_profile.py</url>
+          <url>file://$PROJECT_DIR$/tests/test_books.py</url>
           <line>36</line>
           <option name="timeStamp" value="101" />
         </line-breakpoint>
         <line-breakpoint enabled="true" suspend="THREAD" type="python-line">
-          <url>file://$PROJECT_DIR$/tests/test_add_book_into_your_profile.py</url>
+          <url>file://$PROJECT_DIR$/tests/test_books.py</url>
           <line>56</line>
           <option name="timeStamp" value="102" />
         </line-breakpoint>

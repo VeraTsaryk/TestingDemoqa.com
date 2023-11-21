@@ -4,7 +4,7 @@ from utilities.test_data import TestData
 from Locators.click_locators import ClickLocators
 
 
-class TestButtonIsClickable(BaseTest):
+class TestButton(BaseTest):
     def test_click_button(self):
         click_page = ClickPage(self.driver)
         click_page.open_page(TestData.buttons_url)

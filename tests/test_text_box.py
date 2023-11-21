@@ -3,7 +3,7 @@ from tests.base_test import BaseTest
 from utilities.test_data import TestData
 
 
-class TestCreateUserTextBox(BaseTest):
+class TestTextBox(BaseTest):
     def test_create_new_user_text_box(self):
         text_box_page = TextBoxPage(self.driver)
         text_box_page.open_page(TestData.test_box_url)
